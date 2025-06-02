@@ -2,8 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
-WEBHOOK_URL = 'https://hook.us1.make.com/your-webhook-url'  # Replace with your actual Make.com webhook
+# 🔁 Replace this with your actual Make.com webhook URL
+WEBHOOK_URL = 'https://hook.us1.make.com/your-webhook-url'
 
+# Get sitemap and extract event URLs
 sitemap_url = "https://www.visitmilwaukee.org/sitemap.xml"
 headers = {'User-Agent': 'Mozilla/5.0'}
 
