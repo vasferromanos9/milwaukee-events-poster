@@ -10,7 +10,7 @@ sitemap_url = "https://www.visitmilwaukee.org/sitemap.xml"
 headers = {'User-Agent': 'Mozilla/5.0'}
 
 sitemap_res = requests.get(sitemap_url, headers=headers)
-soup = BeautifulSoup(sitemap_res.content, 'xml')
+soup = BeautifulSoup(sitemap_res.content, 'lxml-xml')
 event_urls = [loc.text for loc in soup.find_all('loc') if '/event/' in loc.text]
 
 for url in event_urls[:5]:  # Limit to 5 for testing
