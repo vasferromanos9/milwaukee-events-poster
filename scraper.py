@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import time
 
 # 🔁 Replace this with your actual Make.com webhook URL
-WEBHOOK_URL = 'https://hook.us1.make.com/your-webhook-url'
+WEBHOOK_URL = 'https://hook.us2.make.com/4gsv4eug8wfap33lifa8svkhi4cui59g'
 
 # Get sitemap and extract event URLs
 sitemap_url = "https://www.visitmilwaukee.org/sitemap.xml"
